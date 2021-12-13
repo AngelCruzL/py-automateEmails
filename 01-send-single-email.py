@@ -1,5 +1,8 @@
 import yagmail
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 sender = 'langelcruzlara@gmail.com'
 receiver = 'langelcruzlara@hotmail.com'
