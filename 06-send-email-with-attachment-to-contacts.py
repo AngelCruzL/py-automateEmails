@@ -5,9 +5,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-sender = 'langelcruzlara@gmail.com'
+sender = os.environ['GMAIL']
 subject = 'This is an email test with an attachment'
-yag = yagmail.SMTP(user=sender, password=os.environ['PASSWORD'])
+yag = yagmail.SMTP(user=sender, password=os.environ['PASSWORD_GMAIL'])
 
 df = pd.read_csv('contacts.csv')
 

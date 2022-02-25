@@ -6,17 +6,17 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-sender = 'langelcruzlara@gmail.com'
-receiver = 'langelcruzlara@hotmail.com'
+sender = os.environ['GMAIL']
+receiver = os.environ['OUTLOOK']
 
-subject = 'This is a test'
+subject = 'This is a test email send every 5 seconds'
 
 contents = """
 Here is the content of the email
 """
 
 while True:
-    yag = yagmail.SMTP(user=sender, password=os.environ['PASSWORD'])
+    yag = yagmail.SMTP(user=sender, password=os.environ['PASSWORD_GMAIL'])
     yag.send(to=receiver, subject=subject, contents=contents)
     print("Email sent! 🚀")
     time.sleep(5)

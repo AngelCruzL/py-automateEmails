@@ -5,12 +5,12 @@ import pandas as pd
 
 load_dotenv()
 
-sender = 'langelcruzlara@gmail.com'
+sender = os.environ['GMAIL']
 
 subject = 'This is a test 🥴'
 
 
-yag = yagmail.SMTP(user=sender, password=os.environ['PASSWORD'])
+yag = yagmail.SMTP(user=sender, password=os.environ['PASSWORD_GMAIL'])
 
 df = pd.read_csv('contacts.csv')
 print(df)
