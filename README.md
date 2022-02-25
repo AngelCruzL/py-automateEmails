@@ -8,3 +8,4 @@
 6. Enviar un correo con un archivo adjunto a una lista de contactos.
 7. Enviar un correo con un archivo adjunto modificado a los contactos en un archivo `csv`.
 8. Envío de un correo desde una dirección outlook o hotmail.
+9. Envío de un correo con contenido HTML desde una dirección outlook o hotmail.
